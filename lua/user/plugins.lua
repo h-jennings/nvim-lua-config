@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	-- Buffers
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
+	use("b0o/incline.nvim")
 
 	-- NVIM Mini
 	use("echasnovski/mini.nvim")
