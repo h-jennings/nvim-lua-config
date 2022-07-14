@@ -61,7 +61,6 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lua")
 
 	-- Buffers
-	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
 	use("b0o/incline.nvim")
 

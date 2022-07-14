@@ -45,8 +45,6 @@ keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
 keymap("n", "<leader>o", "<C-^>", opts)
 -- only one buffer
 keymap("n", "<leader>O", ":on<CR>", opts)
-keymap("n", "]b", ":BufferLineCycleNext<CR>", opts)
-keymap("n", "[b", ":BufferLineCyclePrev<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +3<CR>", opts)
