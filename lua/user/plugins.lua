@@ -84,6 +84,7 @@ return packer.startup(function(use)
 		"glepnir/lspsaga.nvim",
 		branch = "main",
 	})
+	use("jose-elias-alvarez/nvim-lsp-ts-utils")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

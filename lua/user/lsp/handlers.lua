@@ -84,12 +84,19 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
+	local ts_utils = require("nvim-lsp-ts-utils")
+	ts_utils.setup({})
+	-- required to fix code action ranges and filter diagnostics
+	ts_utils.setup_client(client)
+
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false
 	end
+
 	if client.name == "jsonls" then
 		client.resolved_capabilities.document_formatting = false
 	end
+
 	if client.name == "sumneko_lua" then
 		client.resolved_capabilities.document_formatting = false
 	end
