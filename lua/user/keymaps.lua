@@ -47,10 +47,8 @@ keymap("n", "<leader>o", "<C-^>", opts)
 keymap("n", "<leader>O", ":on<CR>", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize +3<CR>", opts)
-keymap("n", "<C-Down>", ":resize -3<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -3<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +3<CR>", opts)
+keymap("n", "<leader>+", ":vertical :resize +5<CR>", opts)
+keymap("n", "<leader>-", ":vertical :resize -5<CR>", opts)
 
 -- Visual --
 -- Stay in indent mode
